@@ -145,7 +145,4 @@ Recorded baseline outcomes (25 November 2026; later source changes require new v
 - Automated link checks establish internal route consistency and external URL scheme safety, not uninterrupted availability of every third-party destination.
 - The certificate fingerprint is a trust anchor: changing the publisher key requires a deliberate, reviewed update to release configuration.
 - The audit records implementation evidence; it does not certify the Android application's full security posture.
-
-## Subsequent local results
-
-For the maintainer-reported local coverage and test corrections after this audit baseline, see the [current verification record](../../docs/TESTING.md). The original audit results above describe the historical run.
+## Subsequent  results
