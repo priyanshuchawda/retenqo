@@ -4,7 +4,25 @@
 
 The recorded evidence combines Android JVM XML results, device release verification and website test/build results. It is scoped to the tested development revisions and published artifact, not a fresh execution of this documentation revision.
 
-## Quality verification
+## Latest maintainer-reported local results
+
+The maintainer supplied the following corrected local results after the earlier verification report. The local changes, exact tested commit, coverage denominators and raw reports have not been supplied; these figures are reported separately from the reproducible historical baseline below. Website coverage refers to the reported website coverage metrics, not Android or whole-product coverage.
+
+| Metric | Latest local result |
+| --- | --- |
+| Website statements | 97.75% |
+| Website branches | 96.85% |
+| Website functions | 100% |
+| Website lines | 98.59% |
+| Android JVM tests | 114/114 passed |
+| Android instrumentation | 6/6 passed (recorded release result; new device execution not established) |
+| Website unit tests | 25/25 passed |
+| Browser tests | 98 passed directly, 2 passed on retry, 0 skipped |
+| Android Lint | 0 errors, 12 warnings, 1 hint |
+
+The previous coverage denominators are retained only with their original percentages; they do not substantiate the corrected local figures. The browser project's scope and reason for the changed skip count are not yet documented.
+
+## Historical quality verification
 
 | Check | Recorded result | Scope |
 | --- | --- | --- |
@@ -20,11 +38,11 @@ The recorded evidence combines Android JVM XML results, device release verificat
 | Website dependency audit | No known vulnerabilities | pnpm dependency graph and lockfile only |
 | Website formatting | Earlier Linux check passed; local combined verify stopped at formatting | Windows CRLF checkout: 61 files flagged; individual lint, type, test and build checks passed |
 
-The two browser retry cases were dark-theme accessibility checks on the privacy desktop and FAQ mobile pages. An earlier browser baseline recorded 100 passes and 68 skips; the latest run supersedes it for current reporting. Full axe coverage was scoped to Chromium desktop/mobile, with smoke coverage on Firefox/WebKit.
+The two browser retry cases were dark-theme accessibility checks on the privacy desktop and FAQ mobile pages. An earlier browser baseline recorded 100 passes and 68 skips; the earlier verification report's run superseded that baseline before the subsequent maintainer-reported correction. Full axe coverage was scoped to Chromium desktop/mobile, with smoke coverage on Firefox/WebKit.
 
-## Measured coverage
+## Historical measured coverage
 
-The website library coverage summary below is separate from the Android JVM-only measurement record; neither represents whole-product coverage.
+The original measured website library coverage below is retained with its matching denominators for provenance. It is separate from the Android JVM-only measurement record and the latest local results; neither represents whole-product coverage.
 
 | Website V8 metric | Covered / total | Coverage |
 | --- | --- | --- |

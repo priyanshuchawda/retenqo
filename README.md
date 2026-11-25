@@ -61,13 +61,13 @@ These are intended product outcomes, not measured user-impact statistics. The pr
 | --- | --- |
 | Android [v0.1.4](https://github.com/priyanshuchawda/retenqo/releases/tag/v0.1.4) | Signed release built and verified; 114 JVM tests passed and 6/6 instrumentation tests passed on the source before the version-only bump |
 | Physical-device release upgrade | Existing production installation upgraded and launched successfully on Android 16 / API 36; original first-install timestamp retained |
-| Android source verification | 114/114 JVM tests passed, zero failures/errors/skips; zero Android Lint errors |
-| Website unit verification | 25/25 tests passed; V8 coverage of configured library scope: 94.59% lines, 93.75% statements, 92.85% branches, 100% functions |
+| Android source verification | 114/114 JVM tests passed, zero failures/errors/skips; zero Android Lint errors (12 warnings, 1 hint in the latest maintainer-reported local result) |
+| Website unit verification | 25/25 tests passed; Maintainer-reported local coverage: 98.59% lines, 97.75% statements, 96.85% branches, 100% functions |
 | Website quality | 12 static pages built; lint and type checks passed; website dependency audit reported no known vulnerabilities |
-| Website browser verification | Latest recorded run: 98 passed, 2 flaky cases passed on retry, 68 skipped |
+| Website browser verification | Latest maintainer-reported local run: 98 passed directly, 2 passed on retry, 0 skipped |
 | Production Lighthouse, one mobile-simulated run | Performance 92, accessibility 100, best practices 100, SEO 100; LCP 1.263 s, CLS 0 |
 
-These are recorded results from the 25 November verification report and published release, scoped to their tested revisions. Website coverage is not Android coverage. See [complete results, coverage and provenance](docs/TESTING.md).
+Results combine the 25 November verification report, published release and subsequent maintainer-reported local corrections. The corrected local coverage and browser totals are not independently reproduced against the published revision. Website coverage is not Android coverage. See [complete results, coverage and provenance](docs/TESTING.md).
 
 ## How it works
 
